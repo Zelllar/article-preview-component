@@ -1,0 +1,26 @@
+.Text-preset1-Bold {
+ font-size: 1.25rem;
+ font-weight: 700;
+ line-height: 130%;
+ letter-spacing: 0.25px;
+}
+
+.Text-preset2-Medium {
+    font-size: 0.81rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.016px;
+}
+
+.Text-preset2-Bold {
+    font-size: 0.81rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.016px;
+}
+
+.Text-preset3 {
+    font-size: 0.81rem;
+    line-height: 140%;
+    letter-spacing: 25%;
+}
