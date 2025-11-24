@@ -1,5 +1,3 @@
-import ShareButton from "./ShareButton";
-
 export default function AuthorBlock() {
   return (
     <div className="card__author-row">
@@ -15,8 +13,6 @@ export default function AuthorBlock() {
           <p className="card__date Text-preset2-Medium">28 Jun 2020</p>
         </div>
       </div>
-
-      <ShareButton />
     </div>
   );
 }

@@ -10,6 +10,7 @@
     gap: 2rem;
     border-radius: 10px;
     box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 50.34);
+    position: relative;
 }
 
 .card-image {
@@ -43,6 +44,7 @@
 .card__author-row {
     display: flex;
     gap: 4rem;
+    align-items: center;
 }
 
 .card__author {
@@ -73,6 +75,43 @@ button.card__share {
     height: 32px;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
+}
+
+/*SharePopup*/
+
+.share-menu {
+    display: flex;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background-color: var(--grey900);
+    color: var(--grey400);
+    border-radius: 0 0 10px 10px;
+    padding: 16px 32px 16px 32px;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+}
+
+.share-popup__close {
+    background-color: var(--grey900);
+    border: none;
+}
+
+.share-menu p {
+    padding-right: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons img {
+    max-width: 20px;
+    max-height: 20px;
 }
 
 @media (min-width: 768px) {
@@ -109,5 +148,41 @@ button.card__share {
 
   .card__author-row {
     gap: 6rem;
+  }
+
+  /*SharePopup*/
+  .share-menu {
+    bottom: auto;
+    left: auto;
+    right: 0;
+    top: 50%;
+    transform: translate(25%, 70%);
+    width: auto;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px 24px;
+    max-height: 55px;
+  }
+
+  .share-menu p {
+    padding-right: 0;
+  }
+
+  .share-menu::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    right: 100px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 12px solid var(--grey900);
+  }
+
+  .share-popup__close {
+    display: none;
   }
 }
