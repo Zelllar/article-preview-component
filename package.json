@@ -1,5 +1,6 @@
 {
   "name": "article-preview",
+  "homepage": "https://github.com/Zelllar/article-preview-component",
   "private": true,
   "version": "0.0.0",
   "type": "module",
